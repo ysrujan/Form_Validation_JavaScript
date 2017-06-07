@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Form Validation</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="validate.js"></script>
+        <!--<script type="text/javascript" src="functions.js"></script>-->
+
+    </head>
+    <body>
+
+        <div class="page-header">
+            <h1>Form Validation - Javascript</h1>
+        </div>
+
+        <div class="container">
+            <form id="frmPerson" class="form-horizontal">
+                <div class="form-group">
+                    <label for="txtUserName" class="col-sm-2 control-label">Username</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="txtUserName" class="form-control" placeholder="Username" required>
+                    </div>
+                </div>                    
+                <div class="form-group">
+                    <label for="txtPassword" class="col-lg-2 control-label">Password</label>
+                    <div class="col-sm-4">
+                        <input type="password" id="txtPassword" class="form-control" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtFn" class="col-sm-2 control-label">First Name</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="txtFn" class="form-control" placeholder="First Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtLn" class="col-sm-2 control-label">Last Name</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="txtLn" class="form-control" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtEmail" class="col-lg-2 control-label">Email</label>
+                    <div class="col-sm-4">
+                        <input type="email" id="txtEmail" class="form-control" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtGender" class="col-lg-2 control-label">Gender</label>
+                    <fieldset class="radiogroup">
+                        <ul class="radio" id="txtGender">
+                            <li><input type="radio" name="gender" id="male" value="Male" /><label for="male">Male</label></li>
+                            <li><input type="radio" name="gender" id="female" value="Female" /><label for="female">Female</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="txtLocation" class="col-lg-2 control-label">Location</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="txtLocation" class="form-control" placeholder="Location" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-offset-2 col-sm-4">
+                        <input type="submit" value="Submit" id="btnSave" class="btn btn-success"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <table id="tblList" class="table table-bordered"></table>
+        </div>
+    </body>
+</html>
